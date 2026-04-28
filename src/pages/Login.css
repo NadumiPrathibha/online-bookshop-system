@@ -1,0 +1,194 @@
+/* Base page styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Clean and modern font */
+}
+
+/* Wrapper to center the login box */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 10px;
+  background: linear-gradient(90deg, #e1cef6 0%, hsl(208, 91%, 78%) 100%);
+}
+
+/* Styling for the login container box */
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  animation: fadeIn 0.5s ease-in; /* Entry animation */
+}
+
+/* Title styling */
+.login-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8e44ad;
+  font-weight: 600;
+}
+
+/* Form layout styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between inputs */
+}
+
+/* Input field styling */
+.login-input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+/* Input focus effect */
+.login-input:focus {
+  border-color: #8e44ad;
+  outline: none;
+}
+
+/* Login button styling */
+.login-button {
+  padding: 12px;
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.login-button:hover {
+  background-color: #732d91;
+}
+
+/* Error message styling */
+.login-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Success message styling */
+.login-success {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e8f5e9; /* Light green background */
+  border: 1px solid #81c784;  /* Green border */
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Wrapper for password input (to position eye icon) */
+.password-wrapper {
+  position: relative;
+}
+
+/* Password show/hide toggle icon */
+.password-toggle-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+
+/* Footer styling at the bottom */
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f4f4f4;
+  color: #7a7a7a;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Fade-in animation used for login box */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 480px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .login-title {
+    font-size: 20px;
+  }
+}
+
+/* Styling for remember me section */
+.login-remember {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between checkbox and label */
+  font-size: 14px;
+  color: #333;
+}
+
+/* Custom checkbox styles */
+.login-remember input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid #8e44ad;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checked checkbox style */
+.login-remember input[type="checkbox"]:checked {
+  background-color: #8e44ad;
+  border-color: #8e44ad;
+}
+
+/* Hover effect for checkbox */
+.login-remember input[type="checkbox"]:hover {
+  border-color: #732d91;
+}
+
+/* Label styling beside checkbox */
+.login-remember label {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hover effect for checkbox label */
+.login-remember label:hover {
+  color: #8e44ad;
+}

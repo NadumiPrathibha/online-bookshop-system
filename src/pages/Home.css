@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  padding: 20px 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hero Section */
+.hero {
+  height: 600px; /* Fixed height */
+  padding: 360px 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  background:  linear-gradient(90deg, #e1cef6 0%, hsl(208, 91%, 78%) 100%);
+
+}
+
+/* Hero Content */
+.hero-content {
+  background:  linear-gradient(90deg, #c58fff 0%, #1265f5 100%);
+  padding: 80px;
+  border-radius: 15px;
+  width: 1000px;
+  
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #f0f0f0;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #dbf210;
+}
+
+
+
+.hero-image img {
+  width: 600px;
+  height: 800px;
+  border-radius: 20px;
+  justify-content: right;
+  padding: 220px 100px;
+}
+
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: transparent;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+}
+
+.btn-primary:hover {
+  background: #ffd700;
+  color: #333;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+}
+
+.btn-secondary:hover {
+  background: #ffd700;
+  color: #333;
+  transform: scale(1.05);
+}
+
+/* Featured Section */
+.featured {
+  text-align: center;
+  padding: 70px 20px;
+  background: white;
+}
+
+.featured-title {
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  color: #4B0082;
+  margin-bottom: 50px;
+}
+
+.featured-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #f0f0f0;
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #bb3030;
+}
+
+.card p {
+  color: #666;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .featured-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

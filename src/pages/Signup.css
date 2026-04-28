@@ -1,0 +1,196 @@
+/* Global body styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* Wrapper for signup page layout */
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 89vh;
+  padding: 20px;
+  background: linear-gradient(90deg, #e1cef6 0%, hsl(208, 91%, 78%) 100%);
+}
+/* Signup box/card container */
+.signup-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+}
+/* Signup page title */
+.signup-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8e44ad;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+/* Form container styling */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Input field styling */
+.signup-input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+/* Focus effect for input fields */
+.signup-input:focus {
+  border-color: #8e44ad;
+  outline: none;
+  box-shadow: 0 0 8px rgba(142, 68, 173, 0.5);
+}
+/* Wrapper to position password toggle icon */
+.signup-password-wrapper {
+  position: relative;
+}
+/* Show/hide password toggle button */
+.signup-password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #8e44ad;
+  transition: color 0.3s;
+}
+/* Hover effect on password icon */
+.signup-password-toggle:hover {
+  color: #732d91;
+}
+/* Signup button style */
+.signup-button {
+  padding: 12px;
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* Hover effect on signup button */
+.signup-button:hover {
+  background-color: #732d91;
+}
+/* Error message box */
+.signup-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+/* Optional success message style */
+.signup-success {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border: 1px solid #81c784;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .signup-box {
+    padding: 30px 20px;
+  }
+
+  .signup-title {
+    font-size: 20px;
+  }
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f4f4f4;
+  color: #f7efef;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Animation for Signup Box */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Signup Page - 'Already have an account?' Link */
+.signup-switch {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.signup-link {
+  color: #8e44ad;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-link:hover {
+  color: #732d91;
+}
+
+/* Custom Checkbox Styling */
+.login-remember input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid #8e44ad;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.login-remember input[type="checkbox"]:checked {
+  background-color: #8e44ad;
+  border-color: #8e44ad;
+}
+
+.login-remember input[type="checkbox"]:hover {
+  border-color: #732d91;
+}
+
+.login-remember label {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+.login-remember label:hover {
+  color: #8e44ad;
+}
