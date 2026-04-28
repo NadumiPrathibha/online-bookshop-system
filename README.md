@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# 📚 Online Bookshop System with API Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Project Overview
+The **Online Bookshop System** is a full-stack web application developed to simulate an online e-commerce platform for books. It integrates external book APIs and provides secure authentication, shopping cart functionality, and order management.
 
-## Available Scripts
+Users can browse books, search and filter results, view detailed information, add items to cart, and complete purchases with a smooth and responsive user experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔐 User Authentication System
+- User Registration (Sign Up)
+- User Login (Email/Username)
+- JWT-based authentication
+- Password encryption using bcrypt
+- Secure session management
+- Protected routes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### 📖 Book Management Module
+- Integration with external APIs (Google Books API / Open Library API)
+- Display book details:
+  - Title
+  - Author
+  - Description
+  - Price 
+- Search functionality
+- Filter and sorting options
+- Detailed book view page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 🛒 Shopping Cart System
+- Add books to cart
+- Remove books from cart
+- Update quantity
+- Real-time total price calculation
+- Persistent cart per user
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 💳 Checkout & Order System
+- Shipping information form
+- Order summary page
+- Order confirmation
+- Invoice generation
+- Order history tracking
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
+- React.js
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend
+- Node.js
+- Express.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Database
+- MongoDB / MySQL
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Authentication & Security
+- JWT Authentication
+- bcrypt password hashing
+- Input validation & sanitization
 
-## Learn More
+### API Integration
+- Google Books API / Open Library API
+- RESTful API architecture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📡 API Endpoints
 
-### Code Splitting
+### 🔐 Authentication
+- POST `/api/auth/register`
+- POST `/api/auth/login`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 📖 Books
+- GET `/api/books`
+- GET `/api/books/:id`
 
-### Analyzing the Bundle Size
+### 🛒 Cart
+- POST `/api/cart`
+- GET `/api/cart`
+- PUT `/api/cart/:id`
+- DELETE `/api/cart/:id`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 💳 Orders
+- POST `/api/orders`
+- GET `/api/orders`
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔐 Security Features
+-JWT authentication for secure login
+-Password encryption using bcrypt
+-Input validation & sanitization
+-Protected API routes
+-Secure session handling
